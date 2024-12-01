@@ -1,4 +1,4 @@
-# ![Microgreens Logo](logo.png) Microgreens 🌱
+# ![Microgreens Logo](images/logo.png) Microgreens 🌱
 
 **Microgreens** is a web-based platform designed to promote and manage the sale and cultivation of microgreens. The platform supports multiple user roles—**Admin**, **Staff**, **Normal Users**, and **Sellers**—each with specific functionalities and dashboards.
 
