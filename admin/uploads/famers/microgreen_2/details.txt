@@ -1,0 +1,9 @@
+Title: hi
+Description: vfgvbrtfgbtgrb
+Price: 1000.00
+Quantity: 16
+Discount: 0.00
+Available Stock: 18
+Category: example 3
+Manufacturing Date: 2024-08-13
+Expiry Date: 2024-08-23

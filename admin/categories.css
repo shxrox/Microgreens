@@ -1,0 +1,84 @@
+/* File: ../admin/categories.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+#main-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+#edit-form, #add-form {
+    margin-bottom: 20px;
+}
+
+#edit-form div, #add-form div {
+    margin-bottom: 15px;
+}
+
+#catname-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#update-btn, #add-btn {
+    background-color: #2ba635;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#update-btn:hover, #add-btn:hover {
+    background-color: #228b27;
+}
+
+/* Table Styles */
+#categories-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#categories-table th, #categories-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#categories-table th {
+    background-color: #2ba635;
+    color: white;
+    text-transform: uppercase;
+}
+
+#categories-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-link {
+    color: #2ba635;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}

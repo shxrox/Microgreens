@@ -1,0 +1,11 @@
+Title: The Foreigner 
+Description: example
+Phone: 761245668
+Location: 112/23 colombo
+Price: 1000.00
+Quantity: 200
+Discount: 10.00
+Available Stock: 100
+Category: Sprout Essentials
+Manufacturing Date: 2024-09-19
+Expiry Date: 2024-09-26

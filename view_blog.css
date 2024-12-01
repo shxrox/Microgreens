@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Blog posts styling */
+.blog-post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.blog-post img {
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 10cm; /* Set width to 10cm */
+    height: 10cm; /* Set height to 10cm */
+    object-fit: cover; /* Ensure the image covers the box while maintaining its aspect ratio */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .blog-post {
+        padding: 15px;
+    }
+
+    .blog-post h3 {
+        font-size: 1.2em;
+    }
+
+    .blog-post img {
+        width: 100%; /* Adjust image size to fit the container on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

@@ -1,0 +1,105 @@
+/* movies.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form input[type="text"], 
+form textarea, 
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="file"] {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #2f7431;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2ba635;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color:  #2ba635;
+    color: white;
+}
+
+td img, td video {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+td a {
+    margin-right: 10px;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Image and Video Previews */
+img, video {
+    border-radius: 5px;
+}

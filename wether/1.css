@@ -1,0 +1,231 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(510deg,hsl(180, 2%, 12%), hsl(180, 1%, 41%), hsl(204, 91%, 64%), hsl(204, 91%, 64%));
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Sun */
+.sun {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, hsl(50, 100%, 60%), hsl(50, 100%, 50%));
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(255, 200, 0, 0.7);
+    animation: slowSpin 20s linear infinite;
+}
+
+@keyframes slowSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Clouds */
+.clouds {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 90%));
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: floatClouds linear infinite;
+}
+
+@keyframes floatClouds {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+/* Cloud sizes and positions */
+.cloud:nth-child(1) {
+    width: 120px;
+    height: 80px;
+    left: -150px;
+    top: 10px;
+    animation-duration: 30s;
+}
+
+.cloud:nth-child(2) {
+    width: 180px;
+    height: 120px;
+    left: -200px;
+    top: 50px;
+    animation-duration: 40s;
+}
+
+.cloud:nth-child(3) {
+    width: 100px;
+    height: 70px;
+    left: -120px;
+    top: 100px;
+    animation-duration: 35s;
+}
+
+/* Rain Animation */
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.raindrop {
+    position: absolute;
+    bottom: 100%;
+    width: 2px;
+    height: 50px;
+    background: hsla(211, 36%, 85%, 0.6);
+    animation: fall linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Form and Card styling remains the same */
+
+.weatherForm {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.cityInput {
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 2px solid hsla(0, 0%, 20%, 0.2);
+    border-radius: 50px;
+    margin: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cityInput:focus {
+    outline: none;
+    border-color: hsl(122, 39%, 50%);
+    box-shadow: 0px 3px 20px rgba(0, 128, 0, 0.2);
+}
+
+button[type="submit"] {
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);
+    box-shadow: 0px 5px 20px rgba(0, 128, 0, 0.3);
+}
+
+.card {
+    background: linear-gradient(145deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: hsla(0, 0%, 0%, 0.85);
+}
+
+p {
+    font-size: 1.4rem;
+    margin: 5px 0;
+    color: hsla(0, 0%, 0%, 0.75);
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 0%, 0.85);
+    margin-bottom: 15px;
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsla(0, 0%, 0%, 0.75);
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 8rem;
+}
+
+.errorDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-top: 20px;
+}

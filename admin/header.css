@@ -1,0 +1,54 @@
+/* File: ../admin/header.css */
+#header {
+    background-color: #0a470f;
+    padding: 10px 0;
+    color: #fff;
+  }
+  
+  #header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header .logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #header .logo img {
+    max-height: 50px;
+  }
+  
+  #navbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar ul h1 {
+    margin: 0;
+  }
+  
+  #navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+  }
+  
+  #navbar .nav-link:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
