@@ -1,8 +1,13 @@
-# ![Microgreens Logo](images/logo.png) Microgreens 🌱
+#Microgreens 🌱
+
+![Microgreens Logo](images/logo.png) 
+
 
 **Microgreens** is a web-based platform designed to promote and manage the sale and cultivation of microgreens. The platform supports multiple user roles—**Admin**, **Staff**, **Normal Users**, and **Sellers**—each with specific functionalities and dashboards.
 
+
 ## Key Features ✨
+
 
 ### General Features (Accessible by all users)
 - **Home**: Landing page with an overview of the platform.
@@ -16,14 +21,18 @@
 - **Chatbox**: A chat feature to communicate with other users.
 - **Weather Checker**: Check weather conditions for farming decisions.
 
+  
 ---
 
+
 ### User Roles & Functionalities
+
 
 #### **Normal Users (Buyers)**
 - Purchase microgreens.
 - View advertisements.
 - Access features like blogs, feedback, and cart.
+
 
 #### **Sellers**
 - **Home**: Overview of selling statistics and features.
@@ -36,6 +45,7 @@
 - **Payment Details**: View earnings and payment status.
 - **Rules & Regulations**: Guidelines for selling on the platform.
 - **Logout**: Secure logout functionality.
+
 
 #### **Admin Dashboard**
 - **Categories**: Manage categories of microgreens.
@@ -56,6 +66,7 @@
 - **Rules & Regulations**: Update platform guidelines.
 - **Logout**: Exit the admin dashboard.
 
+
 #### **Staff**
 - **Home**: Dashboard for quick access to staff functions.
 - **Categories**: Manage microgreens categories.
@@ -67,9 +78,10 @@
 - **Crop Management**: Help manage crop data and statistics.
 - **Logout**: Securely log out.
 
+
 ---
 
-## Technology Stack 💻
+
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
