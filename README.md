@@ -1,5 +1,4 @@
-#
-####Microgreens 🌱
+# MICROGREENS 🌱
 
 ![Microgreens Logo](images/logo.png) 
 
